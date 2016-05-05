@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heimdall</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="Heimdall.ico">
+	<link rel="stylesheet" type="text/css" href="heimdall.css">
+</head>
+<body>
+	<div id="menu">
+		<ul><b>
+		  <li><a href="#LOGIN">Login</a></li>
+		  <li><a href="#ALTERAR">Alterar cadastros</a></li>
+		  <li><a href="#TAGS">Pesquisar Tags</a></li>
+		  <li><a class="active" href="#VINCULAR">Vincular Tags</a></li>
+		  <li><a href="#HISTORICO">Histórico de Tags</a></li>
+		  <li><a href="#FORMS">Emitir Relatórios</a></li>
+		  <li><a href="#LOGOUT">LOGOUT</a></li>
+		</ul></b>
+	</div>
+
+	<div class="pesquisa_tag">
+		<input type="text" name="pesquisa_tag" maxlength="9" placeholder="Digite a TAG">
+		<br>
+		<input type="submit" style="width: 150px; border: none;" value="Buscar TAG">
+		</div>
+		<div class="gerenc_tag">
+			<div class="yellow_text">Nome:  </div> <input type="text"   value="Luiz">
+			<div class="yellow_text">Sobrenome:  </div> <input type="text"   value="Neves">
+			<br>
+			<div class="yellow_text">TAG:   </div> <input type="text"   value="123456789">
+			<br>
+			<div class="yellow_text">
+			Departamento:<br>
+			    <select style="border-radius:5px; margin-bottom: 10px;" name="dpto">
+			    <option value="default"></option>
+			    <option value="Compras">Compras</option>
+			    <option value="Estoque">Estoque</option>
+			    <option value="Financeiro">Financeiro</option>
+			    <option value="limpeza">Limpeza</option>
+			    <option value="Manuntencao">Manutenção</option>
+			    <option value="Presidencia">Presidência</option>
+			    <option value="RH">Recursos Humanos</option>
+			    <option value="TI">Tecnologia da Informação</option>
+				</select><br> 
+			</div>
+			<div class="gerenc_tag2 ">
+			<div class="yellow_text">Fone:  </div> <input type="text"   value="(99) 1234-5678">
+			<br>
+			<div class="yellow_text">Endereço:</div> <input type="text" value="Rua de asfalto n°7">
+			<br>
+			<div class="yellow_text">Foto:</div><br>
+			<img src="http://mkloster.esy.es/images/prof.jpg" alt="User_img" style="width:400px;height:300px;border-radius: 40px">
+		</div>
+	</div>
+</body>

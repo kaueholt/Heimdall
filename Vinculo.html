@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heimdall</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="Heimdall.ico">
+	<link rel="stylesheet" type="text/css" href="heimdall.css">
+</head>
+<body>
+	<div>
+		<header>
+		<h1 id="title"></h1>
+		</header>
+	</div>
+
+	<div id="menu">
+		<ul><b>
+		  <li><a href="#LOGIN">Login</a></li>
+		  <li><a href="#ALTERAR">Alterar cadastros</a></li>
+		  <li><a href="#TAGS">Pesquisar Tags</a></li>
+		  <li><a class="active" href="#VINCULAR">Vincular Tags</a></li>
+		  <li><a href="#HISTORICO">Histórico de Tags</a></li>
+		  <li><a href="#FORMS">Emitir Relatórios</a></li>
+		  <li><a href="#LOGOUT">LOGOUT</a></li>
+		</ul></b>
+	</div>
+
+	<form id="form" action="action_page.php" required>
+		<legend></legend>
+		<div class="main_info">
+			TAG a ser vinculada:<br>
+		   		<input type="text" name="tag_cli" maxlength="9" placeholder="TAG"style="margin-bottom: 10px; margin-top: 0px" size="30"><br>   
+		    CPF do usuário:<br>
+			    <input type="text" name="CPF_cli" maxlength="11" placeholder="CPF"style="margin-bottom: 10px; margin-top: 0px" size="30"> <br>
+			Departamento:<br>
+			    <select  style="border-radius:5px; margin-bottom: 10px;" name="dpto">
+			    <option value="default"></option>
+			    <option value="Compras">Compras</option>
+			    <option value="Estoque">Estoque</option>
+			    <option value="Financeiro">Financeiro</option>
+			    <option value="limpeza">Limpeza</option>
+			    <option value="Manuntencao">Manutenção</option>
+			    <option value="Presidencia">Presidência</option>
+			    <option value="RH">Recursos Humanos</option>
+			    <option value="TI">Tecnologia da Informação</option>
+				</select><br>
+		    Senha ADM:<br>
+	    		<input type="password" name="senha_cli" maxlength="20" placeholder="Senha" style="margin-bottom: 10px; margin-top: 0px"><br>
+	    	Data de ativacao da TAG:<br>
+	    		<input type="date" name="ativacao" value="today" style="margin-bottom: 10px; margin-top: 0px"><br>
+	    	Data de validade da TAG:<br>
+	    		<input type="date" name="validade" style="margin-bottom: 50px; margin-top: 0px"><br>
+	   	
+	    	<input type="submit" onclick="alert('Conformar vínculo de TAG?')" style="border:none" value="Vincular TAG"><br><br>
+	    </div>
+	</form>	
+
+	<div class="last_tags">
+		<div class="tag1"><a>Histórico de cadastros</a><br></div>
+		<table class="tag2">
+			<tr class="tag3">
+				<td>NOME</td>
+				<td>SOBRENOME</td>
+				<td>DEPARTAMENTO</td>
+				<td>CPF</td>
+				<td>TAG</td>
+			</tr>
+			<tr class="lasts">
+				<td>João</td>
+				<td>Rossio</td>
+				<td>Compras</td>
+				<td>9998712010</td>
+				<td>-</td>
+			</tr>
+			<tr class="lasts">
+				<td>Amanda</td>
+				<td>Girassol</td>
+				<td>Financeiro</td>
+				<td>9998743331</td>
+				<td>-</td>
+			</tr>
+			<tr class="lasts">
+				<td>Ricardo</td>
+				<td>Walls</td>
+				<td>T.I.</td>
+				<td>9852711101</td>
+				<td>123451111</td>
+			</tr>
+			<tr class="lasts">
+				<td>Lucy</td>
+				<td>de Souza</td>
+				<td>Financeiro</td>
+				<td>9998895111</td>
+				<td>951745441</td>
+			</tr>
+			<tr class="lasts">
+				<td>Marco</td>
+				<td>Colorado</td>
+				<td>T.I.</td>
+				<td>0745896325</td>
+				<td>951753455</td>
+			</tr>
+			<tr class="lasts">
+				<td>Sergio</td>
+				<td>Gray</td>
+				<td>Comercial</td>
+				<td>0787874542</td>
+				<td>998555215</td>
+			</tr>
+			<tr class="lasts">
+				<td>Thor</td>
+				<td>da Silva </td>
+				<td>Presidência</td>
+				<td>00000552141</td>
+				<td>159753258</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="rodape">
+		<ul class="rod1"><b>
+			<li class="rod2"><a href="sobre" style="color:#f0d453">Sobre: site desenvolvido por MATKA TECHNOLOGIES. Todos os direitos reservados.</a></li>
+		</ul></b>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heimdall</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="Heimdall.ico">
+	<link rel="stylesheet" type="text/css" href="heimdall.css">
+</head>
+<body>
+	<div id="menu">
+		<ul><b>
+		  <li><a href="#LOGIN">Login</a></li>
+		  <li><a href="#ALTERAR">Alterar cadastros</a></li>
+		  <li><a href="#TAGS">Pesquisar Tags</a></li>
+		  <li><a class="active" href="#VINCULAR">Vincular Tags</a></li>
+		  <li><a href="#HISTORICO">Histórico de Tags</a></li>
+		  <li><a href="#FORMS">Emitir Relatórios</a></li>
+		  <li><a href="#LOGOUT">LOGOUT</a></li>
+		</ul></b>
+	</div>
+	
+	<form id="form" action="action_page.php" required>
+		<div class="main_info">
+		TAG a ser pesquisada:<br>
+		   		<input type="text" name="tag_cli" maxlength="9" placeholder="TAG"style="margin-bottom: 10px; margin-top: 0px" size="30"> <br>
+		   		<input type="submit" style="border:none" value="Obter Histórico"><br><br>
+		</div>
+	</form>
+	<div class="last_tags" style="width: 36%; height: 55%">
+		<div class="tag1"><a>HISTÓRICO TAG xxxxxxxxxx</a><br></div>
+		<table class="tag2">
+			<tr class="tag3">
+				<td>DATA</td>
+				<td>PORTA</td>
+				<td>ENTRADA</td>
+				<td>SAÍDA</td>
+			</tr>
+			<tr class="lasts">
+				<td>12/11/2014</td>
+				<td>102</td>
+				<td>11:40</td>
+				<td>19:55</td>
+			</tr>
+			<tr class="lasts">
+				<td>10/11/2008</td>
+				<td>305</td>
+				<td>10:40</td>
+				<td>21:15</td>
+			</tr>
+			<tr class="lasts">
+				<td>14/11/2006</td>
+				<td>102</td>
+				<td>06:41</td>
+				<td>19:55</td>
+			</tr>
+			<tr class="lasts">
+				<td>01/11/2006</td>
+				<td>515</td>
+				<td>11:00</td>
+				<td>19:40</td>
+			</tr>
+			<tr class="lasts">
+				<td>23/11/2004</td>
+				<td>204</td>
+				<td>08:14</td>
+				<td>10:52</td>
+			</tr>
+			
+		</table>
+	</div>
+
+	<div id="rodape">
+		<ul class="rod1"><b>
+			<li class="rod2"><a href="sobre" style="color:#f0d453">Sobre: site desenvolvido por MATKA TECHNOLOGIES. Todos os direitos reservados.</a></li>
+		</ul></b>
+	</div>
+	
+</body>
+</html>

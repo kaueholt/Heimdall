@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heimdall</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="Heimdall.ico">
+	<link rel="stylesheet" type="text/css" href="heimdall.css">
+</head>
+<body>
+	<div>
+		<header>
+		<h1 id="title"></h1>
+		</header>
+	</div>
+
+	<div id="menu">
+		<ul><b>
+		  <li><a class="active" href="#LOGIN">Login</a></li>
+		  <li><a href="#CADASTRO">Cadastro</a></li>
+		</ul></b>
+	</div>
+
+	<form id="form" action="action_page.php" required>
+		<legend></legend>
+		<div class="main_info">
+		    CPF:<br>
+			    <input type="text" name="CPF_admin" maxlength="11" placeholder="CPF"style="margin-bottom: 10px; margin-top: 0px" size="30"> <br>
+		    Senha:<br>
+	    		<input type="password" name="senha_admin" maxlength="20" placeholder="Senha" style="margin-bottom: 10px; margin-top: 0px"> <br>
+		    Confirmação de Senha:<br>
+		   		<input type="password" name="conf_senha_admin" maxlength="20" placeholder="Confirmação da senha" style="margin-bottom: 10px; margin-top: 0px"><br>
+		   	TAG de Administrador:<br>
+		   		<input type="text" name="tag_admin" maxlength="9" placeholder="TAG"style="margin-bottom: 30px; margin-top: 0px" size="30"> <br>
+	   	</div>
+
+	   	<div id=dados>
+		    Nome:<br>
+			    <input type="text" name="nome_admin" size="12" placeholder="Nome"><br>
+		    Sobrenome:<br>
+			    <input style="border-radius:5px;" type="text" name="Sobrenome_admin" size="35" placeholder="Sobrenome">
+			    <br>
+			Departamento:<br>
+			    <select  style="border-radius:5px; margin-bottom: 10px;" name="dpto">
+			    <option value="default"></option>
+			    <option value="Compras">Compras</option>
+			    <option value="Estoque">Estoque</option>
+			    <option value="Financeiro">Financeiro</option>
+			    <option value="limpeza">Limpeza</option>
+			    <option value="Manuntencao">Manutenção</option>
+			    <option value="Presidencia">Presidência</option>
+			    <option value="RH">Recursos Humanos</option>
+			    <option value="TI">Tecnologia da Informação</option>
+				</select><br>
+		    Telefone:<br>
+			    <input type="text" name="Tel_admin" size="13" placeholder="Celular"><br>
+			Endereço:<br>
+			    <input type="text" name="end_admin" size="54" placeholder="Endereço"><br>
+			CEP:<br>
+			    <input type="text" name="CEP_admin" maxlength="8" placeholder="CEP"><br><br>
+			Foto: <input type="file" name="img_admin" style="margin-bottom: 10px;"><br><br>
+	    
+	    	<input type="submit" value="Enviar" style="border:none"><br><br>
+	    </div>
+	</form>	
+
+	<div id="rodape">
+		<ul class="rod1"><b>
+			<li class="rod2"><a href="sobre" style="color:#f0d453">Sobre: site desenvolvido por MATKA TECHNOLOGIES. Todos os direitos reservados.</a></li>
+		</ul></b>
+	</div>
+
+<h1></h1>
+</body>
+</html>
